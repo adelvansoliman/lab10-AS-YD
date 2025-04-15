@@ -5,8 +5,6 @@ calculator.py
 One function per operation, in order.
 """
 import math
-import unittest
-from calculator import *
 
 def add(a, b):
   return a + b
@@ -38,3 +36,4 @@ def square_root(a):
 
 def hypotenuse(a, b):
   return math.hypot(a, b)
+
