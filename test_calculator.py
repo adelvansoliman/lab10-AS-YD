@@ -37,19 +37,19 @@ class TestCalculator(unittest.TestCase):
         self.assertAlmostEqual(logarithm(8, 2), 3, places=7)
         self.assertAlmostEqual(logarithm(25, 5), 2, places=7)
 
-    def test_log_invalid_argument(self):
-        with self.assertRaises(ValueError):
-            logarithm(1, 100)
-
-    def test_log_invalid_argument(self):
+    def test_log_invalid_base(self):
         with self.assertRaises(ValueError):
             logarithm(-1, 10)
         with self.assertRaises(ValueError):
-            logarithm(2, -5)
+            logarithm(0, 10)
         with self.assertRaises(ValueError):
-            logarithm(1, 5)
+            logarithm(1, 10)
+
+    def test_log_invalid_argument(self):
         with self.assertRaises(ValueError):
-            logarithm(0, 5)
+            logarithm(10, 0)
+        with self.assertRaises(ValueError):
+            logarithm(10, -5)
 
     def test_hypotenuse(self):
         self.assertAlmostEqual(hypotenuse(3, 4), 5)
