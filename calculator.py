@@ -1,3 +1,6 @@
+#https://github.com/adelvansoliman/lab10-AS-YD.git
+# Partner 1: Adel-Van Soliman
+# Partner 2: Yulee Donnelly
 """
 calculator.py
 - Defines functions used to create a simple calculator

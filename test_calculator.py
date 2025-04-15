@@ -1,5 +1,11 @@
+#https://github.com/adelvansoliman/lab10-AS-YD.git
+# Partner 1: Adel-Van Soliman
+# Partner 2: Yulee Donnelly
 import unittest
-import calculator
+
+import math
+
+from calculator import *
 
 
 class TestCalculator(unittest.TestCase):
