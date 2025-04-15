@@ -28,6 +28,19 @@ class TestCalculator(unittest.TestCase):
         with self.assertRaises(ZeroDivisionError):
             div(5, 0)
 
+    def test_divide_by_zero(self):
+        with self.assertRaises(ZeroDivisionError):
+            div(5, 0)
+
+    def test_logarithm(self):
+        self.assertAlmostEqual(logarithm(100, 10), 2, places=7)
+        self.assertAlmostEqual(logarithm(8, 2), 3, places=7)
+        self.assertAlmostEqual(logarithm(25, 5), 2, places=7)
+
+    def test_log_invalid_argument(self):
+        with self.assertRaises(ValueError):
+            logarithm(1, 100)
+
     def test_log_invalid_argument(self):
         with self.assertRaises(ValueError):
             logarithm(-1, 10)
